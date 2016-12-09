@@ -29,7 +29,14 @@ root {
 html {
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
     background-color: #000000;
+    background: #000000 url("future_circle_edit.jpg") no-repeat right bottom; 
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
 }
 
 
@@ -48,69 +55,10 @@ p {
     color: #66ff66;
 }
 p::selection {
-    background: #dd99ff; /* WebKit/Blink Browsers */
+    background: #bbffbb; /* WebKit/Blink Browsers */
 }
 p::-moz-selection {
-    background: #dd99ff; /* Gecko Browsers */
-}
-
-
-
-
-
-h1 {
-    font-family: "Nova Mono", monospace;
-    font-size: 50px;
-    color: #66ff66;
-    margin: 0 75px;
-    padding: 10px 0;
-    white-space: nowrap; /* Keeps the content on a single line */
-    overflow-y: hidden;
-}
-h1::selection {
-    background: #dd99ff; /* WebKit/Blink Browsers */
-}
-h1::-moz-selection {
-    background: #dd99ff; /* Gecko Browsers */
-}
-
-
-
-
-li {
-    color: #66ff66;
-}
-
-
-
-
-li a {
-    color: #66ff66;
-    text-decoration: none;
-}
-li a::selection {
-    background: #dd99ff; /* WebKit/Blink Browsers */
-}
-li a::-moz-selection {
-    background: #dd99ff; /* Gecko Browsers */
-}
-li a:hover {
-    text-decoration: underline;
-}
-
-
-
-
-.main-content {
-    margin: 20px 75px;
-    animation-delay: 7.5s;
-    animation-name: fade-in;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-@keyframes fade-in {
-    0%   {opacity: 0;}
-    100% {opacity: 1;}
+    background: #bbffbb; /* Gecko Browsers */
 }
 
 
@@ -122,10 +70,10 @@ li a:hover {
     animation-iteration-count: infinite;
 }
 #underscore::selection {
-    background: #dd99ff; /* Gecko Browsers */
+    background: #bbffbb; /* Gecko Browsers */
 }
 #underscore::-moz-selection {
-    background: #dd99ff; /* Gecko Browsers */
+    background: #bbffbb; /* Gecko Browsers */
 }
 
 /* blinking underscore animation */
@@ -152,7 +100,7 @@ li a:hover {
 #bar2 {
     margin: 50px 0 0;
     background-color: #66ff66;
-    width: 90%;
+    width: 70%;
     height: 4px;
     animation-delay: 4s;
     animation-name: left-to-right;
@@ -183,7 +131,7 @@ li a:hover {
 #box2 {
     background-color: #222222;
     margin: 0;
-    width: 89.5%;
+    width: 69.5%;
     overflow-y: hidden;
     animation-delay: 5.5s;
     animation-name: wipe-down2;
@@ -198,5 +146,151 @@ li a:hover {
 }
 @keyframes wipe-down2 {
     0%   {max-height: 0;}
-    100% {max-height: 190px;}
+    100% {max-height: 375px;}
+}
+
+
+
+
+
+h1 {
+    font-family: "Nova Mono", monospace;
+    font-size: 50px;
+    color: #66ff66;
+    margin: 0 75px;
+    padding: 10px 0;
+    white-space: nowrap; /* Keeps the content on a single line */
+    overflow-y: hidden;
+}
+h1::selection {
+    background: #bbffbb; /* WebKit/Blink Browsers */
+}
+h1::-moz-selection {
+    background: #bbffbb; /* Gecko Browsers */
+}
+
+
+
+
+#typing1 {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    animation-name: typing;
+    animation-delay: 3s;
+    animation-duration: 3.5s;
+    animation-fill-mode: both;
+    animation-timing-function: steps(40, end);
+}
+
+@keyframes typing {
+    0%   {max-width: 0%;}
+    100% {max-width: 100%;}
+}
+
+
+
+
+
+ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin: 0;
+    padding: 4px 75px;
+}
+li:hover {
+    background-color: #333333;
+}
+
+#audrey, #alex, #nicky, #athan, #avril, #ben {
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+#audrey {
+    animation-delay: 8s;
+}
+
+#alex {
+    animation-delay: 8.2s;
+}
+
+#nicky {
+    animation-delay: 8.4s;
+}
+
+#athan {
+    animation-delay: 8.6s;
+}
+
+#avril {
+    animation-delay: 8.8s;
+}
+
+#ben {
+    animation-delay: 9s;
+}
+
+@keyframes fade-in {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+
+li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #66ff66;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0;
+}
+li a::selection {
+    background: #bbffbb; /* WebKit/Blink Browsers */
+}
+li a::-moz-selection {
+    background: #bbffbb; /* Gecko Browsers */
+}
+li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.main-text {
+    margin: 20px 75px 0;
+    overflow-x: hidden;
+    white-space: nowrap;
+    animation-name: typing;
+    animation-delay: 6.5s;
+    animation-duration: 3.5s;
+    animation-fill-mode: both;
+}
+.main-text p {
+    font-size: 30px;
+}
+
+
+
+
+.credits {
+    margin: 40px 75px 20px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    animation-name: typing;
+    animation-delay: 10s;
+    animation-duration: 3.5s;
+    animation-fill-mode: both;
+}
+.credits p {
+    font-size: 20px;
 }
