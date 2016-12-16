@@ -246,12 +246,13 @@ li:hover {
 
 li a {
     display: block;
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
     color: #66ff66;
     font-size: 20px;
     text-decoration: none;
-    margin: 0;
 }
 li a::selection {
     background: #bbffbb; /* WebKit/Blink Browsers */
